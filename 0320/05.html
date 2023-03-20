@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function callAlert(){
+            alert("알림메시지가 출력되는 내장함수 alert()")
+        }
+    </script>
+</head>
+<body>
+    <form action="result.html" method="post">
+        <input type="text" size="15" name="schoolName" placeholder="학교명과 전공"><br>
+        <input type="id" size="15" name="id" value="성명"><br>
+        <input type="password" size="15" name="pwd"><br>
+        <!-- radio 속성은 하나의 그룹중의 하나만 선택
+             name 속성의 값을 같게 하면 됨 -->
+        성별:<br><input type="radio" name="gender" value="male">남 <br>
+            <input type="radio" name="gender" value="female">여 <br>
+            <input type="radio" name="gender" value="closed">공개 안함 <br>
+        파일: <br><input type="file" name="file1"><br>
+        취미: <input type="checkbox" name="read">독서 | 
+             <input type="checkbox" name="movie">영화 | 
+             <input type="checkbox" name="travel">여행 | 
+             <input type="checkbox" name="game">게임 | 
+        보이지않는 데이터: <input type="hidden" value="10"><br>
+        <button type="submit">제출</button>
+        <button type="reset">초기화</button>
+        <button type="button" onclick="callAlert()">일반버튼</button><!--Javascript 함수 호출시에 많이 사용-->
+        <br><br>
+        <input type="image" src="http://via.placeholder.com/100x100">
+    </form>
+</body>
+</html>
