@@ -8,22 +8,30 @@
 </head>
 <body>
     <form action="result.html">
-        <table border = "1">
+        <table>
             <tr>
-                <td colspan="4"><h1>글 작성하기</h1></td>
+                <td colspan="2"><h1>글 작성하기</h1></td>
             </tr>
             <tr>
-                <td>작성자<input type="text" id="name"><br></td>
+                <td>작성자</td>
+                <td><input type="text" id="name"></td>
             </tr>
             <tr>
-                <td>아이디<input type="text" id="id"><br></td>
+                <td>아이디</td>
+                <td><input type="text" id="id"><br></td>
             </tr>
             <tr>
-                <td>이메일<input type="text" id="emailid">@<input type="text" id="emaildomain"><br></td>
+                <td>이메일</td>
+                <td><input type="text" id="emailid">
+                @
+                <input type="text" id="emaildomain"></td>
             </tr>
             <tr>
                 <td>
-                    휴대폰<select name="phone">
+                    휴대폰
+                </td>
+                <td>
+                    <select name="phone">
                     <option value="010">010</option>            
                     <option value="011">011</option>            
                     <option value="016">016</option>            
@@ -32,11 +40,23 @@
                     <option value="019">019</option>            
                 </select>
                 - <input type="text" id="middle">
+                - <input type="text" id="end">
+            </tr>
+            <tr>
+                <td>글제목</td>
+                <td><input type="text" id="title"></td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">제출</button></td>
             </tr>
         </table>
-        - <input type="text" id="end"><br>
-        글제목<input type="text" id="title"><br>
-        내용<textarea name="" id="" cols="30" rows="10"></textarea>
     </form>
 </body>
 </html>
