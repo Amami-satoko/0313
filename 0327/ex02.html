@@ -7,28 +7,31 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>글 작성하기</h1>
     <form action="result.html">
         <table>
             <tr>
-                <td colspan="2"><h1>글 작성하기</h1></td>
-            </tr>
-            <tr>
-                <td>작성자</td>
+                <td><b>작성자</b></td>
                 <td><input type="text" id="name"></td>
             </tr>
             <tr>
-                <td>아이디</td>
+                <td><b>아이디</b></td>
                 <td><input type="text" id="id"><br></td>
             </tr>
             <tr>
-                <td>이메일</td>
+                <td><b>이메일</b></td>
                 <td><input type="text" id="emailid">
-                @
-                <input type="text" id="emaildomain"></td>
+                <b></b>
+                <select name="domain">
+                    <option value="gmail">gmail.com</option>
+                    <option value="naver">naver.com</option>
+                    <option value="kakao">kakao.com</option>
+                    <option value="self">직접 입력</option>
+                </select></td>
             </tr>
             <tr>
                 <td>
-                    휴대폰
+                    <b>휴대폰</b>
                 </td>
                 <td>
                     <select name="phone">
@@ -43,11 +46,11 @@
                 - <input type="text" id="end">
             </tr>
             <tr>
-                <td>글제목</td>
+                <td><b>글제목</b></td>
                 <td><input type="text" id="title"></td>
             </tr>
             <tr>
-                <td>내용</td>
+                <td><b>내용</b></td>
                 <td>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </td>
