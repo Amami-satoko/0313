@@ -1,0 +1,46 @@
+.container{
+    width: 1080px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.left{
+    float: left;
+    width: 740px;
+    height: 428px;
+    background-color: red;
+    margin-bottom: 8px;
+}
+.right{
+    float: right;
+    text-align: right;
+    width: 332px;
+    height: 428px;
+    background-color: blue;
+    margin-bottom: 8px;
+}
+.gnb{
+    float: left;
+    padding: 8px 0 8px 0;
+    background-color: green;
+}
+li{
+    list-style-type: none;
+}
+.gnb > li:first-child{
+    padding: 0;
+}
+.gnb > li{
+    float: left;
+    padding-left: 16px;
+}
+.rank{
+    float: right;
+    padding: 8px 0 8px 0;
+    background-color: yellow;
+}
+.footer{
+    position: fixed;
+    background-color: yellow;
+    width: 1080px;
+    height: 80px;
+}
